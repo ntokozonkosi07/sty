@@ -1,0 +1,26 @@
+.menu-container {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+
+    .row1{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: end;
+        grid-column-gap: 10px;
+        align-items: start;
+
+        div {
+            display: grid;
+            justify-content: end;
+        }
+    }
+
+    .row2 {
+        @extend .row1;
+        justify-content: start;
+        align-items: end;
+        div {
+            font-size: 24px;
+        }
+    }
+}

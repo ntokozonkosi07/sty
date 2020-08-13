@@ -1,0 +1,36 @@
+@import './../../../styles/variables';
+
+.container {
+    display: grid;
+    grid-template: 108px auto / repeat(12, 1fr);
+    width: auto;
+    margin: 0 auto;
+
+    .header {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (min-width: $phone) {
+    .container {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: $laptop)  {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+        width: 1140px;
+    }
+}

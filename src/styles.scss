@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/styles/variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+html {
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 200;
+
+    body {
+        background-color: $cream;
+        height: 100%;
+    }
+}
