@@ -7,6 +7,18 @@ html {
     font-size: 18px;
     font-family: 'Roboto';
     font-weight: 200;
+    color: $dark-gray;
+
+    a {
+        font-size: 24px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $dark-gray;
+        
+        &:active {
+            color: inherit;
+        }
+    }
 
     body {
         background-color: $cream;

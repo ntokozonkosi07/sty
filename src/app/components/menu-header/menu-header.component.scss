@@ -1,3 +1,5 @@
+@import './../../styles/variables';
+
 .menu-container {
     display: grid;
     grid-template-rows: repeat(2, 50px);
@@ -16,11 +18,27 @@
     }
 
     .row2 {
-        @extend .row1;
-        justify-content: start;
-        align-items: end;
-        div {
-            font-size: 24px;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: start;
+            grid-column-gap: 10px;
+
+            li {
+                a {
+                    &.active {
+                        border-bottom: 1px solid $dark-gray;
+                    }
+
+                    &.active:hover,
+                    &:hover {
+                        color: $gray;
+                        border-bottom: 1px solid $gray;
+                    }
+                }
+            }
         }
     }
 }
